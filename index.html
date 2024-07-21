@@ -11,7 +11,9 @@
       theme: {
         extend: {
           colors: {
-            primary: '#da373d',
+            primary: '#F70839',
+            primaryHover: '#ff6d29',
+            text: '#111A45',
             contentBg: '#F9F6F0',
           }
         },
@@ -87,8 +89,8 @@
               alt="Shoes preview">
 
             <div class="pt-3">
-              <h4 class="font-semibold text-lg text-gray-800">New sneakers</h4>
-              <span class="font-semibold text-black">$42.00</span>
+              <h4 class="font-semibold text-lg text-text">Sneakerpeak</h4>
+              <span class="font-semibold text-black">$42.99</span>
             </div>
           </div>
         </div>
@@ -97,7 +99,7 @@
 
     <section id="shop" class="min-h-[90vh] bg-contentBg py-6" data-aos="fade-up">
       <div class="container">
-        <h1 class="text-center text-4xl font-semibold">Fresh arrivals and new selection.</h1>
+        <h1 class="text-center text-4xl font-semibold text-text">Fresh arrivals and new selection.</h1>
 
         <div class="grid md:grid-cols-4 grid-cols-2 gap-4 mt-9">
           <div class="p-2 bg-white rounded-md" id="card">
@@ -105,8 +107,8 @@
               alt="Shoes preview">
 
             <div class="pt-3">
-              <h4 class="font-semibold text-lg text-gray-800">New sneakers</h4>
-              <span class="font-semibold text-black">$42.00</span>
+              <h4 class="font-semibold text-lg text-text">Shoe Envy</h4>
+              <span class="font-semibold text-black">$59.99</span>
               <button class="my-button w-full mt-6 flex items-center justify-center gap-2">
                 <box-icon name='link-alt' color="#fff"></box-icon>
                 view
@@ -117,8 +119,8 @@
             <img class="w-full bg-cover bg-red-100/60 rounded-md" src="./assets/shoes-sneakers.png" alt="Shoes preview">
 
             <div class="pt-3">
-              <h4 class="font-semibold text-lg text-gray-800">New sneakers</h4>
-              <span class="font-semibold text-black">$42.00</span>
+              <h4 class="font-semibold text-lg text-text">Sneakerpeak</h4>
+              <span class="font-semibold text-black">$62.00</span>
               <button class="my-button w-full mt-6 flex items-center justify-center gap-2">
                 <box-icon name='link-alt' color="#fff"></box-icon>
                 view
@@ -130,8 +132,8 @@
               alt="Shoes preview">
 
             <div class="pt-3">
-              <h4 class="font-semibold text-lg text-gray-800">New sneakers</h4>
-              <span class="font-semibold text-black">$42.00</span>
+              <h4 class="font-semibold text-lg text-text">Kickcomedy</h4>
+              <span class="font-semibold text-black">$150.99</span>
               <button class="my-button w-full mt-6 flex items-center justify-center gap-2">
                 <box-icon name='link-alt' color="#fff"></box-icon>
                 view
@@ -143,8 +145,8 @@
               alt="Shoes preview">
 
             <div class="pt-3">
-              <h4 class="font-semibold text-lg text-gray-800">New sneakers</h4>
-              <span class="font-semibold text-black">$42.00</span>
+              <h4 class="font-semibold text-lg text-text">Footwear</h4>
+              <span class="font-semibold text-black">$99.00</span>
               <button class="my-button w-full mt-6 flex items-center justify-center gap-2">
                 <box-icon name='link-alt' color="#fff"></box-icon>
                 view
@@ -154,7 +156,7 @@
         </div>
 
         <div class="flex justify-center mt-9">
-          <button class="my-button !bg-white border font-semibold text-gray-700 duration-300 !hover:bg-primary">
+          <button class="my-button  !bg-white border font-semibold text-text duration-300 !hover:bg-primary">
             view all
           </button>
         </div>
@@ -162,14 +164,14 @@
     </section>
 
     <section id="about" class="min-h-[90vh] py-6" data-aos="fade-up-left">
-      <h1 class="text-center text-4xl font-semibold pt-3 pb-8">Why people choose TrendHive?</h1>
+      <h1 class="text-center text-4xl font-semibold pt-3 pb-8 text-text">Why people choose TrendHive?</h1>
 
       <div class="container grid grid-cols-2 md:grid-cols-3 gap-16 mt-10">
         <div>
           <div class="bg-primary w-fit block pt-3 pb-0.5 px-3 rounded-2xl">
             <box-icon name='trending-up' size="md" color="#fff"></box-icon>
           </div>
-          <h3 class="text-2xl font-semibold mt-4">Latest Trends</h3>
+          <h3 class="text-2xl font-semibold mt-4 text-text">Latest Trends</h3>
           <p class="text-gray-900 text-sm">Stay ahead with our curated collection of the newest styles.</p>
         </div>
 
@@ -177,7 +179,7 @@
           <div class="bg-primary w-fit block pt-3 pb-0.5 px-3 rounded-2xl">
             <box-icon name='dollar' size="md" color="#fff"></box-icon>
           </div>
-          <h3 class="text-2xl font-semibold mt-4">Quality Products</h3>
+          <h3 class="text-2xl font-semibold mt-4 text-text">Quality Products</h3>
           <p class="text-gray-900 text-sm">Enjoy premium products made to last.</p>
         </div>
 
@@ -185,7 +187,7 @@
           <div class="bg-primary w-fit block pt-3 pb-0.5 px-3 rounded-2xl">
             <box-icon type='solid' name='credit-card' size="md" color="#fff"></box-icon>
           </div>
-          <h3 class="text-2xl font-semibold mt-4">Affordable Prices</h3>
+          <h3 class="text-2xl font-semibold mt-4 text-text">Affordable Prices</h3>
           <p class="text-gray-900 text-sm">Shop the best styles without breaking the bank.</p>
         </div>
 
@@ -193,7 +195,7 @@
           <div class="bg-primary w-fit block pt-3 pb-0.5 px-3 rounded-2xl">
             <box-icon type='solid' name='truck' size="md" color="#fff"></box-icon>
           </div>
-          <h3 class="text-2xl font-semibold mt-4">Fast Shipping</h3>
+          <h3 class="text-2xl font-semibold mt-4 text-text">Fast Shipping</h3>
           <p class="text-gray-900 text-sm">Get your orders quickly with our reliable shipping.</p>
         </div>
 
@@ -201,14 +203,14 @@
           <div class="bg-primary w-fit block pt-3 pb-0.5 px-3 rounded-2xl">
             <box-icon type='solid' name='medal' size="md" color="#fff"></box-icon>
           </div>
-          <h3 class="text-2xl font-semibold mt-4">Exclusive Offers</h3>
+          <h3 class="text-2xl font-semibold mt-4 text-text">Exclusive Offers</h3>
           <p class="text-gray-900 text-sm">Access special deals and discounts just for you.</p>
         </div>
         <div>
           <div class="bg-primary w-fit block pt-3 pb-0.5 px-3 rounded-2xl">
             <box-icon type='solid' name='user-check' size="md" color="#fff"></box-icon>
           </div>
-          <h3 class="text-2xl font-semibold mt-4">Satisfied Customers</h3>
+          <h3 class="text-2xl font-semibold mt-4 text-text">Satisfied Customers</h3>
           <p class="text-gray-900 text-sm">Join our community of happy and loyal shoppers.</p>
         </div>
 
@@ -217,7 +219,7 @@
 
     <section id="contact" class="min-h-[65vh] bg-contentBg py-6">
       <div data-aos="fade-down-right" class="container flex flex-col justify-center min-h-[65vh]">
-        <h1 class="text-3xl font-bold mt-6">Any question? <br /> Write or call us. we will write back within 4h</h1>
+        <h1 class="text-3xl font-bold mt-6 text-text">Any question? <br /> Write or call us. we will write back within 4h</h1>
         <div class="flex items-center gap-3 mt-4">
           <span class="font-semibold text-gray-800">
             mail@email.com

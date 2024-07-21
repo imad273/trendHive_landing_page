@@ -2,6 +2,8 @@
 
 :root {
   --primary: #da373d;
+  --primaryHover: #ff6d29;
+  --text: #111A45;
 }
 
 * {
@@ -18,4 +20,9 @@ html {
   padding: 8px 12px;
   color: white;
   border-radius: 8px;
+  transition: 400ms;
+}
+
+.my-button:hover {
+  background-color: var(--primaryHover);
 }
