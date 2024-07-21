@@ -11,6 +11,8 @@ function openPhoneMenu() {
 
 function closeMenu() {
   var x = document.getElementById("links");
-  x.style.display = "none";
-  x.style.position = "static";
+  if (screen.width <= "767") {
+    x.style.display = "none";
+    x.style.position = "static";
+  }
 }
