@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primary: #da373d;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.my-button {
+  display: block;
+  background-color: var(--primary);
+  padding: 8px 12px;
+  color: white;
+  border-radius: 8px;
+}

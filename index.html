@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#da373d',
+            contentBg: '#F9F6F0',
+          }
+        },
+        container: {
+          center: true,
+          padding: {
+            DEFAULT: '1rem',
+            sm: '2rem',
+            lg: '4rem',
+            xl: '5rem',
+            '2xl': '6rem',
+          },
+        },
+      }
+    }
+  </script>
+
+  <!-- Animation scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <link rel="stylesheet" href="./styles.css">
+  <title>TrendHive</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="shadow overflow-y-hidden">
+    <div class="container flex items-center justify-between py-4">
+      <div data-aos="fade-right">
+        <a href="#">
+          <h1 class="font-bold text-2xl text-primary">TrendHive</h1>
+        </a>
+      </div>
+
+      <div id="links" data-aos="fade-left"
+        class="hidden bg-white md:bg-transparent w-full md:flex flex-col md:flex-row justify-center items-center gap-7 left-0 top-0 md:static h-screen md:h-auto md:block z-50 w-full bg-white relative md:w-auto flex items-center">
+        <box-icon name='x' onclick="closeMenu()" class="md:hidden absolute right-5 top-5"></box-icon>
+        <a onclick="closeMenu()" class="my-2 text-gray-700 transition-colors duration-300 transform hover:text-primary"
+          href="#">Home</a>
+        <a onclick="closeMenu()" class="my-2 text-gray-700 transition-colors duration-300 transform hover:text-primary"
+          href="#shop">Shop</a>
+        <a onclick="closeMenu()" class="my-2 text-gray-700 transition-colors duration-300 transform hover:text-primary"
+          href="#about">About</a>
+        <a onclick="closeMenu()" class="my-2 text-gray-700 transition-colors duration-300 transform hover:text-primary"
+          href="#contact">Contact</a>
+
+      </div>
+
+      <div class="md:hidden">
+        <box-icon name='menu' onclick="openPhoneMenu()"></box-icon>
+      </div>
+    </div>
+  </nav>
+  <!-- ------ -->
+
+  <main class="overflow-x-hidden">
+    <!-- Main section -->
+    <section class="min-h-screen bg-contentBg">
+      <div class="container" data-aos="fade-up">
+        <div class="flex md:justify-between flex-col md:flex-row items-center justify-center min-h-[70vh]">
+          <div class="space-y-5">
+            <h3 class="text-4xl mt-6 md:mt-0 text-primary font-semibold w-full md:w-4/6">Discover Unique Products for
+              Your Lifestyle</h3>
+            <p class="font-semibold w-full md:w-3/6 text-gray-500 text-sm">TrendHive is your ultimate destination for
+              the latest
+              trends and unique styles.</p>
+            <button class="my-button">Visit our store</button>
+          </div>
+
+          <div class="p-2 bg-white rounded-md mt-6 md:mt-0" id="card">
+            <img class="w-56 h-52 bg-cover bg-red-100/60 rounded-md" src="./assets/shoes-sneakers.png"
+              alt="Shoes preview">
+
+            <div class="pt-3">
+              <h4 class="font-semibold text-lg text-gray-800">New sneakers</h4>
+              <span class="font-semibold text-black">$42.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="shop" class="min-h-[90vh] bg-contentBg py-6" data-aos="fade-up">
+      <div class="container">
+        <h1 class="text-center text-4xl font-semibold">Fresh arrivals and new selection.</h1>
+
+        <div class="grid md:grid-cols-4 grid-cols-2 gap-4 mt-9">
+          <div class="p-2 bg-white rounded-md" id="card">
+            <img class="w-full bg-cover bg-emerald-100/60 rounded-md" src="./assets/shoes-sneakers-4.png"
+              alt="Shoes preview">
+
+            <div class="pt-3">
+              <h4 class="font-semibold text-lg text-gray-800">New sneakers</h4>
+              <span class="font-semibold text-black">$42.00</span>
+              <button class="my-button w-full mt-6 flex items-center justify-center gap-2">
+                <box-icon name='link-alt' color="#fff"></box-icon>
+                view
+              </button>
+            </div>
+          </div>
+          <div class="p-2 bg-white rounded-md" id="card">
+            <img class="w-full bg-cover bg-red-100/60 rounded-md" src="./assets/shoes-sneakers.png" alt="Shoes preview">
+
+            <div class="pt-3">
+              <h4 class="font-semibold text-lg text-gray-800">New sneakers</h4>
+              <span class="font-semibold text-black">$42.00</span>
+              <button class="my-button w-full mt-6 flex items-center justify-center gap-2">
+                <box-icon name='link-alt' color="#fff"></box-icon>
+                view
+              </button>
+            </div>
+          </div>
+          <div class="p-2 bg-white rounded-md" id="card">
+            <img class="w-full bg-cover bg-yellow-100/60 rounded-md" src="./assets/shoes-sneakers-3.png"
+              alt="Shoes preview">
+
+            <div class="pt-3">
+              <h4 class="font-semibold text-lg text-gray-800">New sneakers</h4>
+              <span class="font-semibold text-black">$42.00</span>
+              <button class="my-button w-full mt-6 flex items-center justify-center gap-2">
+                <box-icon name='link-alt' color="#fff"></box-icon>
+                view
+              </button>
+            </div>
+          </div>
+          <div class="p-2 bg-white rounded-md" id="card">
+            <img class="w-full bg-cover bg-green-100/60 rounded-md" src="./assets/shoes-sneakers-2.png"
+              alt="Shoes preview">
+
+            <div class="pt-3">
+              <h4 class="font-semibold text-lg text-gray-800">New sneakers</h4>
+              <span class="font-semibold text-black">$42.00</span>
+              <button class="my-button w-full mt-6 flex items-center justify-center gap-2">
+                <box-icon name='link-alt' color="#fff"></box-icon>
+                view
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center mt-9">
+          <button class="my-button !bg-white border font-semibold text-gray-700 duration-300 !hover:bg-primary">
+            view all
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="min-h-[90vh] py-6" data-aos="fade-up-left">
+      <h1 class="text-center text-4xl font-semibold pt-3 pb-8">Why people choose TrendHive?</h1>
+
+      <div class="container grid grid-cols-2 md:grid-cols-3 gap-16 mt-10">
+        <div>
+          <div class="bg-primary w-fit block pt-3 pb-0.5 px-3 rounded-2xl">
+            <box-icon name='trending-up' size="md" color="#fff"></box-icon>
+          </div>
+          <h3 class="text-2xl font-semibold mt-4">Latest Trends</h3>
+          <p class="text-gray-900 text-sm">Stay ahead with our curated collection of the newest styles.</p>
+        </div>
+
+        <div>
+          <div class="bg-primary w-fit block pt-3 pb-0.5 px-3 rounded-2xl">
+            <box-icon name='dollar' size="md" color="#fff"></box-icon>
+          </div>
+          <h3 class="text-2xl font-semibold mt-4">Quality Products</h3>
+          <p class="text-gray-900 text-sm">Enjoy premium products made to last.</p>
+        </div>
+
+        <div>
+          <div class="bg-primary w-fit block pt-3 pb-0.5 px-3 rounded-2xl">
+            <box-icon type='solid' name='credit-card' size="md" color="#fff"></box-icon>
+          </div>
+          <h3 class="text-2xl font-semibold mt-4">Affordable Prices</h3>
+          <p class="text-gray-900 text-sm">Shop the best styles without breaking the bank.</p>
+        </div>
+
+        <div>
+          <div class="bg-primary w-fit block pt-3 pb-0.5 px-3 rounded-2xl">
+            <box-icon type='solid' name='truck' size="md" color="#fff"></box-icon>
+          </div>
+          <h3 class="text-2xl font-semibold mt-4">Fast Shipping</h3>
+          <p class="text-gray-900 text-sm">Get your orders quickly with our reliable shipping.</p>
+        </div>
+
+        <div>
+          <div class="bg-primary w-fit block pt-3 pb-0.5 px-3 rounded-2xl">
+            <box-icon type='solid' name='medal' size="md" color="#fff"></box-icon>
+          </div>
+          <h3 class="text-2xl font-semibold mt-4">Exclusive Offers</h3>
+          <p class="text-gray-900 text-sm">Access special deals and discounts just for you.</p>
+        </div>
+        <div>
+          <div class="bg-primary w-fit block pt-3 pb-0.5 px-3 rounded-2xl">
+            <box-icon type='solid' name='user-check' size="md" color="#fff"></box-icon>
+          </div>
+          <h3 class="text-2xl font-semibold mt-4">Satisfied Customers</h3>
+          <p class="text-gray-900 text-sm">Join our community of happy and loyal shoppers.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="min-h-[65vh] bg-contentBg py-6">
+      <div data-aos="fade-down-right" class="container flex flex-col justify-center min-h-[65vh]">
+        <h1 class="text-3xl font-bold mt-6">Any question? <br /> Write or call us. we will write back within 4h</h1>
+        <div class="flex items-center gap-3 mt-4">
+          <span class="font-semibold text-gray-800">
+            mail@email.com
+          </span>
+
+          <span class="w-0.5 h-5 bg-gray-300"></span>
+
+          <span class="font-semibold text-gray-800">
+            (+917 820 303 557)
+          </span>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-white">
+    <div class="container flex flex-col items-center justify-between py-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
+      <a href="#">
+        <h1 class="font-bold text-2xl text-primary">TrendHive</h1>
+      </a>
+
+      <p class="text-sm text-gray-600">© Copyright 2024. All Rights Reserved.</p>
+
+      <div class="flex -mx-2">
+        <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 hover:text-primary">
+          <box-icon type='logo' name='facebook-circle' color="#777"></box-icon>
+
+        </a>
+
+        <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 hover:text-primary">
+          <box-icon type='logo' name='instagram-alt' color="#777"></box-icon>
+        </a>
+
+        <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 hover:text-primary">
+          <box-icon type='logo' name='tiktok' color="#777"></box-icon>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>
