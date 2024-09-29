@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --primary: #da373d;
-  --primaryHover: #ff6d29;
+  --primary: #F70839;
+  --primaryHover: #ff3059;
   --text: #111A45;
 }
 
@@ -14,7 +14,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.my-button {
+.button-default {
   display: block;
   background-color: var(--primary);
   padding: 8px 12px;
@@ -23,6 +23,6 @@ html {
   transition: 400ms;
 }
 
-.my-button:hover {
+.button-default:hover {
   background-color: var(--primaryHover);
 }
