@@ -35,7 +35,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <link rel="icon" href="./assets/T.png">
+  <link rel="icon" href="./assets/favicon.ico">
   <link rel="stylesheet" href="./styles.css">
   <title>TrendHive</title>
 </head>
@@ -45,8 +45,8 @@
   <nav class="shadow overflow-y-hidden">
     <div class="container flex items-center justify-between py-4">
       <div data-aos="fade-right">
-        <a href="#">
-          <h1 class="font-bold text-2xl text-primary">TrendHive</h1>
+        <a href="/">
+          <img src="./assets/logo.png" class="w-12" alt="LOGO">
         </a>
       </div>
 
@@ -54,7 +54,7 @@
         class="hidden bg-white md:bg-transparent w-full md:flex flex-col md:flex-row justify-center items-center gap-7 left-0 top-0 md:static h-screen md:h-auto md:block z-50 w-full bg-white relative md:w-auto flex items-center">
         <box-icon name='x' onclick="closeMenu()" class="md:hidden absolute right-5 top-5"></box-icon>
         <a onclick="closeMenu()" class="my-2 text-gray-700 transition-colors duration-300 transform hover:text-primary"
-          href="#">Home</a>
+          href="/">Home</a>
         <a onclick="closeMenu()" class="my-2 text-gray-700 transition-colors duration-300 transform hover:text-primary"
           href="#about">Shop</a>
         <a onclick="closeMenu()" class="my-2 text-gray-700 transition-colors duration-300 transform hover:text-primary"
@@ -88,27 +88,27 @@
             <button class="button-default" id="CTA">Order Now</button>
           </div>
 
-          <img src="./assets/cosmetic-product-hero.png" />
+          <img src="./assets/cosmetic-product-hero.png" alt="hero_image" />
         </div>
       </div>
     </section>
 
     <section id="about" class="py-12" data-aos="fade-up">
       <div class="flex justify-center">
-        <h3 class="uppercase text-gray-900 text-center text-2xl font-semibold md:text-4xl md:w-3/6">
+        <h3 class="uppercase text-gray-900 text-center text-heading text-2xl font-semibold md:text-4xl md:w-3/6">
           achieve skin using the power of natural ingredients
         </h3>
       </div>
 
       <div class="container flex flex-col-reverse md:flex-row justify-center py-10 gap-5">
         <div class="md:w-2/6 w-full">
-          <img class="w-full float-right rounded" src="./assets/product.jpg" alt="">
+          <img class="w-full float-right rounded" src="./assets/product.jpg" alt="main product image">
         </div>
 
         <div class="md:w-4/6 w-full pt-6">
           <div class="h-full flex flex-col gap-5 md:gap-0 justify-between justify-reverse">
             <div>
-              <div class="flex gap-5">
+              <div class="md:flex gap-5">
                 <div class="flex flex-col">
                   <span class="text-2xl text-primary font-bold">x2</span>
                   <p class="text-gray-800 font-semibold">skin hydration</p>
@@ -140,34 +140,37 @@
     </section>
 
     <section class="py-12 bg-primary" data-aos="fade-up">
-      <div class="container grid items-center grid-cols-1 md:grid-cols-4 gap-10 md:gap-5">
+      <div class="container grid items-start grid-cols-1 md:grid-cols-4 gap-10 md:gap-5">
         <div class="flex flex-col items-center gap-6">
-          <img width="64" height="64"
+          <img width="64" height="64" alt="icon-1"
             src="https://img.icons8.com/ffffff/external-flatart-icons-outline-flatarticons/external-cosmetic-hygiene-routine-flatart-icons-outline-flatarticons.png" />
-          <p class="text-white font-semibold">No harsh Chemicals</p>
+          <p class="text-white font-semibold text-center">No harsh Chemicals</p>
         </div>
         <div class="flex flex-col items-center gap-6">
-          <img width="64" height="64" src="https://img.icons8.com/ffffff/leaf--v1" />
-          <p class="text-white font-semibold">Quality Natural Ingredients</p>
+          <img width="64" height="64" alt="icon-2" src="https://img.icons8.com/ffffff/leaf--v1" />
+          <p class="text-white font-semibold text-center">Quality Natural Ingredients</p>
         </div>
         <div class="flex flex-col items-center gap-6">
-          <img width="64" height="64" src="https://img.icons8.com/ffffff/shampoo.png" />
-          <p class="text-white font-semibold">Cruelty Free</p>
+          <img width="64" height="64" alt="icon-3" src="https://img.icons8.com/ffffff/shampoo.png" />
+          <p class="text-white font-semibold text-center">Cruelty Free</p>
         </div>
         <div class="flex flex-col items-center gap-6">
-          <img width="64" height="64" src="https://img.icons8.com/ffffff/heart-with-pulse--v1.png" />
-          <p class="text-white font-semibold">Healthy Glow</p>
+          <img width="64" height="64" alt="icon-4" src="https://img.icons8.com/ffffff/heart-with-pulse--v1.png" />
+          <p class="text-white font-semibold text-center">Healthy Glow</p>
         </div>
       </div>
     </section>
 
-    <section class="py-10 flex justify-center items-center" data-aos="fade-up">
+    <section class="py-10 flex justify-center items-center">
       <div class="md:w-4/6">
-        <img class="w-full md:h-[80vh] bg-cover md:rounded mb-5" src="./assets/products-overview-1.jpg">
+        <img class="w-full md:h-[80vh] bg-cover md:rounded mb-5" alt="first image product"
+          src="./assets/products-overview-1.jpg" data-aos="zoom-in" data-aos-duration="1000">
 
         <div class="grid grid-cols-2 gap-3">
-          <img class="md:rounded" src="./assets/products-overview-2.jpg" alt="">
-          <img class="md:rounded" src="./assets/products-overview-3.jpg" alt="">
+          <img class="md:rounded" src="./assets/products-overview-2.jpg" alt="second image product"
+            data-aos="fade-up-right" data-aos-duration="1000">
+          <img class="md:rounded" src="./assets/products-overview-3.jpg" alt="third image product"
+            data-aos="fade-up-left" data-aos-duration="1000">
 
         </div>
       </div>
@@ -175,7 +178,8 @@
 
     <section id="contact" class="min-h-[65vh] bg-contentBg py-6">
       <div data-aos="fade-down-right" class="container flex flex-col justify-center min-h-[65vh]">
-        <h1 class="text-2xl md:text-3xl font-bold mt-6 text-heading">Any question? <br /> Write or call us. we will write back
+        <h1 class="text-2xl md:text-3xl font-bold mt-6 text-heading">Any question? <br /> Write or call us. we will
+          write back
           within
           4h</h1>
         <div class="flex items-center gap-3 mt-4">
@@ -197,8 +201,8 @@
 
   <footer class="bg-white">
     <div class="container flex flex-col items-center justify-between py-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
-      <a href="#">
-        <h1 class="font-bold text-2xl text-primary">TrendHive</h1>
+      <a href="/">
+        <img src="./assets/logo.png" class="w-12" alt="LOGO">
       </a>
 
       <p class="text-sm text-gray-600">© Copyright 2024. All Rights Reserved.</p>
@@ -206,7 +210,6 @@
       <div class="flex -mx-2">
         <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 hover:text-primary">
           <box-icon type='logo' name='facebook-circle' color="#777"></box-icon>
-
         </a>
 
         <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 hover:text-primary">
